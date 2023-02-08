@@ -435,24 +435,26 @@
             </li>
           </ul>
         </div>
-        <div class="footer-subscribe">
-          <p class="title-subscribe">Subscribe</p>
-          <label class="footer-subscribe-item">
-            <input
-              class="footer-subscribe-input"
-              name="Email_for_subscribing"
-              type="email"
-              placeholder="E-mail"
-              required
-            />
-            <button class="subscribe-btn" type="submit">
-              <span class="text-btn">Subscribe</span>
-              <svg class="icon-send" width="24px" height="24px">
-                <use href="./images/symbol-defs.svg#icon-send"></use>
-              </svg>
-            </button>
-          </label>
-        </div>
+        <form class="footer-subscribe-form" action>
+          <div class="footer-subscribe">
+            <p class="title-subscribe">Subscribe</p>
+            <label class="footer-subscribe-item">
+              <input
+                class="footer-subscribe-input"
+                name="Email_for_subscribing"
+                type="email"
+                placeholder="E-mail"
+                required
+              />
+              <button class="subscribe-btn" type="submit">
+                <span class="text-btn">Subscribe</span>
+                <svg class="icon-send" width="24px" height="24px">
+                  <use href="./images/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </div>
+        </form>
       </div>
     </footer>
 
@@ -510,7 +512,7 @@
               </svg>
             </span>
           </label>
-          <label class="contact-form-item"
+          <label class="contact-form-item comment"
             ><span class="contact-form-definition">Comment</span
             ><textarea
               class="contact-comment"
@@ -526,7 +528,7 @@
             />
             <label class="modal-form-check-deskr" for="user-policy"
               >I accept the terms and conditions of the&nbsp;
-              <a href=""> Privacy Policy</a></label
+              <a class="link-policy" href> Privacy Policy</a></label
             ></span
           >
           <button class="contact-info-btn" type="submit">Send</button>
